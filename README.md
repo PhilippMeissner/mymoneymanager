@@ -1,13 +1,5 @@
-# Boilerplate Rails app
+https://codeship.com/projects/201206/status?branch=master
+# My money manager
 
-Just another boilerplate rails app. Comes preconfigured with several aweseome gems to make building UIs a lot easier.
-
-The UI gems include:
-
-* Boostrap
-* Bourbon
-* Font Awesome
-
-On top of that `guard` is included. Together with the [http://livereload.com/](http://livereload.com/) browser extension the app can automatically reload whenever you change stuff in the UI.
-
-For tests `minitest` is set as the default test engine.
+This ruby on rails application is basically for me to keep track of my money flow.
+On top of that I want to get into testing and different frameworks for JS and CSS with this. Use it as you please :hanky:
