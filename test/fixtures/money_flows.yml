@@ -1,0 +1,8 @@
+one:
+  amount_cents: 1234
+  description: "A money flows description"
+  name: "Gas"
+two:
+  amount_cents: 98765
+  description: "Another money flow"
+  name: "Room service"

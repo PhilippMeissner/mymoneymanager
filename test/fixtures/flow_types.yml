@@ -1,0 +1,8 @@
+one:
+  name: "recurring"
+
+two:
+  name: "daily"
+
+three:
+  name: "once"

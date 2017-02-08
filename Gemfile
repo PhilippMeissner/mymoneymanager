@@ -16,12 +16,12 @@ gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+gem 'money-rails'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
@@ -32,7 +32,9 @@ gem 'slim-rails'
 # Bootstrap styles
 gem 'bootstrap-sass', '~> 3.1.1'
 
-# Font awesome fonts
+gem 'eventmachine', github: "eventmachine/eventmachine"
+
+# Font awesome fonts2
 gem "font-awesome-rails"
 
 # CSS mixins
@@ -49,9 +51,8 @@ group :development do
   gem 'meta_request'
 end
 
-group :production do 
-  gem 'mysql2'
-end
+#database
+gem 'pg'
 
 # Simple Form
 gem 'simple_form', git: "https://github.com/plataformatec/simple_form.git"

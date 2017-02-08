@@ -1,0 +1,11 @@
+= simple_form_for(@money_flow) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :amount_cents
+    = f.input :description
+    = f.input :name
+    = f.input :flow_type
+
+  .form-actions
+    = f.button :submit, class: "btn btn-primary"

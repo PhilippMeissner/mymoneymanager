@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Amount cents:
+  = @money_flow.amount_cents
+p
+  strong Description:
+  = @money_flow.description
+p
+  strong Name:
+  = @money_flow.name
+p
+  strong Flow type:
+  = @money_flow.flow_type
+
+= link_to 'Edit', edit_money_flow_path(@money_flow)
+'|
+= link_to 'Back', money_flows_path

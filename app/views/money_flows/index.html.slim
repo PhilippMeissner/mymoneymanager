@@ -1,0 +1,27 @@
+h1 Listing money_flows
+- if @money_flows.any?
+  table.table.table-condensed.table-striped.table-hover
+    thead
+      tr
+        th Name
+        th.text-right Amount cents
+        th.text-right Flow type
+        th Description
+        th.text-right Actions
+
+    tbody
+      - @money_flows.each do |money_flow|
+        tr
+          td = money_flow.name
+          td.text-right = money_flow.amount_cents
+          td.text-right = money_flow.flow_type
+          td = money_flow.description
+          td
+            .btn-group.pull-right
+              = link_to 'Show', money_flow, class: "btn btn-primary"
+              = link_to 'Edit', edit_money_flow_path(money_flow), class: "btn btn-primary"
+              = link_to 'Destroy', money_flow, data: {:confirm => 'Are you sure?'}, :method => :delete, class: "btn btn-danger"
+- else
+  h4 None.
+
+= link_to 'New Money flow', new_money_flow_path, class: "btn btn-primary"
